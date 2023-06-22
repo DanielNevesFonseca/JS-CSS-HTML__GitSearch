@@ -37,6 +37,9 @@
 
 .index__section-second {
   background-color: var(--color-grey-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .index__section-second form {
@@ -75,6 +78,31 @@
   font-weight: 700;
   line-height: 50px;
   color: var(--color-grey-7);
+}
+
+.hidden {
+  display: none;
+}
+
+.spinner {
+  margin-top: 2rem;
+  height: 3.125rem;
+  width: 3.125rem;
+
+  border-top: 3px solid var(--color-brand-1);
+  border-radius: 100%;
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (min-width: 768px) {
