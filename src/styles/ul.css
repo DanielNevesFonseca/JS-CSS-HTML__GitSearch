@@ -20,7 +20,8 @@
   border: 2px solid rgba(255, 255, 255, 0.6);
   border-radius: 8px;
   width: 100%;
-  height: 190px;
+  height: 15.625rem;
+  box-sizing: border-box;
 }
 
 .profile__ul li:hover {
@@ -57,6 +58,6 @@
 
 @media screen and (min-width: 1024px) {
   .profile__ul li {
-    width: 39%;
+    width: 48%;
   }
 }
