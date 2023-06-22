@@ -11,9 +11,9 @@ async function searchUser() {
     })
       .then(function (response) {
         if (response.ok) {
-          window.location.href = '../src/pages/profile.html';
+          window.location.href = './src/pages/profile.html';
         } else {
-          window.location.href = '../src/pages/error.html';
+          window.location.href = './src/pages/error.html';
         }
         return response.json();
       })
