@@ -15,12 +15,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.25rem;
+  gap: 2rem;
   padding: 35px;
   border: 2px solid rgba(255, 255, 255, 0.6);
   border-radius: 8px;
   width: 100%;
-  height: 15.625rem;
+  height: 18.75rem;
   box-sizing: border-box;
 }
 
