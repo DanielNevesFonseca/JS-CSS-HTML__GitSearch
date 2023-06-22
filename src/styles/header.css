@@ -7,20 +7,27 @@
   margin: 0 auto;
   align-items: center;
   justify-content: center;
+  padding: 24px 0;
 }
 
-.profile_div {
+.profile__div {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
 
-.profile_div p {
+.profile__div p {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 29px;
   color: var(--color-grey-7);
+}
+
+.profile__photo {
+  max-width: 100px;
+  border: 5px solid var(--color-brand-1);
+  border-radius: 50%;
 }
 
 @media (min-width: 768px) {

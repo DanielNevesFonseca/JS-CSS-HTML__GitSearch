@@ -1,3 +1,5 @@
+
+
 .profile__ul {
   display: flex;
   justify-content: center;
@@ -5,16 +7,27 @@
   width: 80%;
   margin: 0 auto;
   flex-wrap: wrap;
+  padding-bottom: 3rem;
 }
 
 .profile__ul li {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
   padding: 35px;
   border: 2px solid rgba(255, 255, 255, 0.6);
   border-radius: 8px;
-  max-width: 360px;
+  width: 100%;
+  height: 190px;
+}
+
+.profile__ul li:hover {
+  scale: 1.03;
+  transition: all ease-in-out 0.3s;
+  box-shadow: 0 0 10px 5px var(--color-brand-1);
+  border-color: var(--color-brand-1);
 }
 .profile__ul li h4 {
   font-size: 1.2rem;
@@ -39,5 +52,11 @@
   .profile__ul {
     align-items: flex-start;
     justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .profile__ul li {
+    width: 39%;
   }
 }

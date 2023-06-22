@@ -66,6 +66,8 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 4px;
   padding: 8px;
+  color: #fff;
+  font-style: italic;
 }
 
 .error__section-first h3 {
