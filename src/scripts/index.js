@@ -15,7 +15,7 @@ async function searchUser() {
     setTimeout(async () => {
         if (response.ok) {
           const responseContent = await response.json();
-          localStorage.setItem('user', JSON.stringify(responseContent));
+          localStorage.setItem('@gitSearch:user', JSON.stringify(responseContent));
           window.location.href = './src/pages/profile.html'; // redirecionamento de página
         } else {
           window.location.href = './src/pages/error.html';

@@ -1,6 +1,6 @@
 export function renderHeader() {
   const headerContent = document.querySelector('.profile__div');
-  const userData = JSON.parse(localStorage.getItem('user'));
+  const userData = JSON.parse(localStorage.getItem('@gitSearch:user'));
   // coloquei a limpeza dentro para renderizar caso tenha algo dentro do localStorage
   // caso contrário têm um modelo de template renderizado
   if (userData.length !== 0) {
@@ -17,7 +17,7 @@ export function renderHeader() {
 
 export async function renderRepositories() {
   const repositoriesContainer = document.querySelector('.profile__ul');
-  const userData = JSON.parse(localStorage.getItem('user'));
+  const userData = JSON.parse(localStorage.getItem('@gitSearch:user'));
 
   await fetch(`https://api.github.com/users/${userData.login}/repos`, {
     method: "GET", 
